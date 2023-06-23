@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sambat</title>
+</head>
+<body>
+  <h1>Your Order</h1>
+  <form action="" method="post" id="order-form">
+    <div>
+      <div>
+        <label for="order-name">Name</label>
+       <input type="text" name="order-name" id="order-name" autofocus>
+      </div>
+      <div>
+        <label for="order-name">email</label>
+       <input type="text" name="order-email" id="order-email" value="chuck@roundhouse.gmail" disabled>
+      </div>
+    </div>
+    <div> 
+      <label>Address</label>
+      <input type="text" name="order-address-1" id="order-address-1">
+      <input type="text" name="order-address-2" id="order-address-2">
+    </div>
+    <div>
+      <div>
+        <lable for="order-city">City</lable>
+        <input type="text" name="order-city" id="order-city">
+      </div>
+      <div>
+        <label for="order-state">State</label>
+        <select name="order-state" id="order-state">
+          <option value="Nepal">Nepal</option>
+          <option value="America">America</option>
+          <option value="dubai">Dubai</option>
+          <option value="India">India</option>
+          <option value="China">China</option>
+        </select>
+
+      </div>
+      <div>
+        <lable for="order-zip">Zip</lable>
+        <input type="text" name="order-Zip" id="order-zip">
+      </div>
+    </div>
+    <div>
+      <label>What color sample send you?</label>
+      <br>
+      <label for="sample-white">
+        <!-- same name for only choosing  -->
+        <input type="checkbox" name="color-sample" id="sample-white" value="white"> white
+      </label>
+      <label for="sample-green">
+        <input type="checkbox" name="color-sample" id="sample-green" value="green"> green
+      </label>
+      <label for="sample-blue">
+        <input type="checkbox" name="color-sample" id="sample-blue" value="blue"> blue
+      </label>
+      <label for="sample-red">
+        <input type="checkbox" name="color-sample" id="sample-red" value="red"> red
+      </label>
+      <label for="sample-yello">
+        <input type="checkbox" name="color-sample" id="sample-yello" value="yello"> yello
+      </label>
+    </div>
+    <div>
+      <label>How large is your team?</label>
+      <br>
+      <label for="team-small">
+        <!-- same name used for only one chooding option -->
+        <input type="radio" name="team-size" id="team-small" value="1-5"> 1-5 people
+      </label>
+      <label for="size-medium">
+        <!-- "checked" is used form default choosing  -->
+        <input type="radio" name="team-size"  id="size-medium" value="6-10"  > 6-10 people
+      </label>
+      <label for="size-large">
+        <input type="radio" name="team-size" id="size-large" value="10-20"> 10+ people
+      </label>
+    </div>
+    <div>
+      <label for="order-comments">Comments</label>
+      <textarea name="order-comments" id="order-comments" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="offer-sign-up">
+        <input type="checkbox" name="offer-sign-up" id="offer-sign-up"> sign for special offers
+        <!-- any type button you can use just a small change  -->
+        <!-- <button>place order</button> -->
+        <!-- <input type="submit" value="submit"> -->
+        <!-- <input type="submit" value="Place to order"> -->
+    </div>
+  </form>
+  <!-- link with main class form if you don't link whith form you cannot go to next -->
+  <button form="order-form">Place order</button>
+</body>
+</html>
